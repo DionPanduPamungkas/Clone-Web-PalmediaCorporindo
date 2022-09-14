@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500&family=Lato:wght@300&family=Patrick+Hand&family=Quicksand:wght@300&family=Roboto:wght@300&family=Satisfy&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+.navbar {
+	background: #fff;
+	border-bottom: 1px solid rgba(2,2,2,0.10);
+}
+.navbar-nav , .nav-link {
+	font-size: 18;
+	margin-right: 24px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.nav-link {
+	border-radius: .3rem;
+	padding: 4px 15px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-size: 14.7px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+	color: #ee2823 !important;
+	transition: all 0.4s;
+}
+
+.jumbotron {
+	background-image: url('../img/homeslider.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -300px;
+	height: 1030px;
+}
+
+.display-4 {					
+	margin-top: 500px;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 40px;
+}
+
+.jumbotron p {
+	font-family: 'Cairo', sans-serif;
+}
+
+.about {
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	color: white;
+	padding-top: 25px;
+	text-transform: capitalize;
+}
+.card-text {
+	font-family: 'Roboto', sans-serif;
+}
+.example {
+	font-size: 18px;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	padding-top: 20px;
+}
+
+.row .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row .card:hover  {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.02);
+	transition: all 0.2s;
+}
+
+.content-top {
+	margin-top: -32px;
+	padding-bottom: 60px;
+}
+
+.card-title ,
+.card-texty {
+	cursor: default;
+}
+
+.card-text {
+	font-size: 17px;
+}
+
+.panels .row .space {
+	margin-top: 25px;
+}
+
+section#gallery {
+	z-index: 10000;
+}
+
+.gallery{
+	background: #f8f9fa !important;
+	margin-top: 70px;
+	padding: 0 0 110px 0;
+}
+
+.gallery h2{
+	padding-top: 47px;
+	padding-bottom: 19px;
+}
+section#contact {
+	background: url(../img/homestart.jpg) no-repeat bottom center fixed;
+	background-size: cover;
+	height: 450px;
+	display: flex;
+    /*margin-top: 60px;*/
+	z-index: -10000;
+}
+.col-xl-4 h2 {
+	font-size: 39.5px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	font-family: 'Dosis', sans-serif;
+}
+
+.col-xl-5 p {
+	font-weight: lighter;
+	color: #fff;    
+	padding: 0 29px 0 31px;
+	margin: 7px 0 23px 0;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+    font-size: 1.3em;
+}
+
+section#footer {
+	background: #525e69!important;
+}
+
+section#footer .atas {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.atas {
+	height: 220px;
+}
+
+.atas .row p {
+	color: #d0d0d0;
+	font-size: 17px;
+}
+
+.bawah {
+	color: #fff;
+}
+
+footer {
+	height: 35px;
+}
+
+footer p {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: center;
+	line-height: 35px;
+	font-family: 'Patrick Hand', cursive;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #ee2823;
+    border-color: #ee2823;
+}
+
+.btn1 {    
+	padding: 5px 15px;
+	font-weight: 800;
+}
+
+.fonts {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.fonts2 {
+	font-family: 'Dosis', sans-serif;
+}
+
+/* DESTOP VERSI */
+@media (max-width: 991px) {
+	.footer .col:nth-child(3),
+	.footer .col:nth-child(4) {
+		margin-top: 10px;
+	}
+	.footer .col a img {
+		width: 100px;
+	}
+}
+
+@media (min-width: 992px) { 
+	.navbar {
+		background: none;
+		padding-top: 15px;
+	}
+	.jumbotron {
+	    margin-top: -560px;
+	    height: 1200px;
+	}
+	.display-4 {
+	    margin-top: 720px;
+	    font-family: 'Quicksand', sans-serif;
+	    font-size: 58px;
+	}
+	.card-text {
+		font-size: 15px;
+	}
+	.panels .rows2 {
+		margin-top: 40px;
+	}
+	.nav-link.active,
+	.nav-link:hover {
+		background: #ee2823;
+		color: #fff !important;
+		transition: all 0.4s;
+	}
+}
+
+@media (max-width: 557px) {
+	.atas .row p {
+	    font-size: 15.5px;
+	}
+}
+
+
+@media (max-width: 482px) {
+	.display-4 {
+	    font-size: 48px;
+	}
+}
+
